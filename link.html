@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xoso</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+    <!-- fontawesome link cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jquery link cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <!-- tailwind script -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- flowbite link -->
+     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+     <!-- ionicon script -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav class="bg-red-700">
+        <div class="bg-white shadow">
+            <header class="max-w-6xl m-auto p-2 flex justify-between items-center">
+                <div class="open-menu hidden" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="./assets/img/logo/logo.png" alt="" class="w-32">
+                </div>
+                <div class="date hidden"></div>
+            </header>
+        </div>
+        <div class="menu max-w-6xl m-auto shadow" id="myNav">
+            <div class="close-menu p-3 bg-blue-100 text-xl hidden closebtn" onclick="closeNav()">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="logo-mobile hidden bg-blue-50 p-5">
+                <img src="./assets/img/logo/logo.png" alt="" class="w-32">
+            </div>
+            <ul class="m-0 p-0">
+                <li class="inline-block"><a href="./index.html" class="block p-3 text-white font-bold text-md hover:bg-red-600"><i class="fa fa-home"></i></a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">XSMB</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">XSMN</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">XSMT</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">VIETLOTT</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">PHÂN TÍCH</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">TK CẦU</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">THỐNG KÊ</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">TRA CỨU KQ</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">QUAY THỬ</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">LÔ KẾT</a></li>
+                <li class="inline-block"><a href="./link.html" class="block p-3 text-white font-bold text-md hover:bg-red-600">SỚ ĐẦU ĐUÔI</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="wraper overflow-hidden">
+        <div class="wrap flex justify-center">
+            <div class="table flex justify-center items-center max-w-6xl">
+                <div class="table-content flex flex-row">
+                    <div class="table-item m-2 border border-gray-400 w-6/12">
+                        <!-- #table1 -->
+                        <div class="">
+                            <div class="bg-orange-300 py-2">
+                                <span class="text-xl font-bold px-2">Quai thử Xổ số Hôm nay - Quai thử KQXS 3 Miền lấy hên</span>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div class="flex flex-row mx-2">
+                                        <div class="mx-2">  
+                                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            <label for="vehicle1" class="text-sm"> Quay thử theo miền</label><br>
+                                        </div>
+                                        <div class="mx-2">  
+                                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            <label for="vehicle1" class="text-sm"> Quay thử theo tỉnh</label><br>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row mx-2 mt-4">
+                                        <div class="border py-2 mx-2">
+                                            <span class="px-1 text-sm">Miền Bắt</span>
+                                            <span class="px-2 text-sm"><ion-icon name="chevron-down-outline"></ion-icon></span>
+                                        </div>
+                                        <div class="border py-2 mx-2 bg-red-700 text-white">
+                                            <a href="#">
+                                                <span class="px-2 text-sm">Quay thử lại</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row border border-gray-400 mt-2">
+                                <span class="flex justify-center items-center font-bold border-r border-gray-400 p-2 w-1/6">DB</span>
+                                <span class="flex justify-center font-bold p-2 w-5/6">73467</span>
+                            </div>
+                            <!-- 1 -->
+                            <div class="flex flex-row border border-gray-400 bg-blue-100">
+                                <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">1</span>
+                                <span class="flex justify-center font-bold p-2 w-5/6">46555</span>
+                            </div>
+                            <!-- 2 -->
+                            <div class="flex flex-row border border-gray-400">
+                                <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">2</span>
+                                <div class="flex justify-center items-center font-bold p-2 w-5/6">
+                                    <span class="flex justify-center items-center font-bold w-3/6">54218</span>
+                                    <span class="flex justify-center items-center font-bold w-3/6">85617</span>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="flex flex-row border border-gray-400 bg-blue-100">
+                                <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">3</span>
+                                <div class="flex flex-col justify-center items-center p-2  w-5/6">
+                                    <div class=" w-full">
+                                        <div class="flex flex-row justify-center items-center py-1">  
+                                            <span class="flex justify-center items-center font-bold w-2/6">91568</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">98610</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">71603</span>
+                                        </div>
+                                        <div class="flex flex-row justify-center items-center py-1">  
+                                            <span class="flex justify-around items-center font-bold w-2/6">56198</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">43193</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">59981</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="flex flex-row border border-gray-400">
+                                <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">4</span>
+                                <div class="flex justify-center items-center p-2 w-5/6">
+                                    <span class="flex justify-center items-center font-bold w-3/6">8382</span>
+                                    <span class="flex justify-center items-center font-bold w-3/6">7206</span>
+                                    <span class="flex justify-center items-center font-bold w-3/6">2140</span>
+                                    <span class="flex justify-center items-center font-bold w-3/6">5559</span>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="flex flex-row border border-gray-400 bg-blue-100">
+                                <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">5</span>
+                                <div class="flex flex-col justify-center items-center p-2  w-5/6">
+                                    <div class=" w-full">
+                                        <div class="flex flex-row justify-center items-center py-1">  
+                                            <span class="flex justify-center items-center font-bold w-2/6">9656</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">3346</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">7221</span>
+                                        </div>
+                                        <div class="flex flex-row justify-center items-center py-1 ">  
+                                            <span class="flex justify-around items-center font-bold w-2/6">6296</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">1609</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">1871</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="flex flex-row border border-gray-400">
+                                <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">6</span>
+                                <div class="flex flex-col justify-center items-center p-2  w-5/6">
+                                    <div class=" w-full">
+                                        <div class="flex flex-row justify-center items-center">  
+                                            <span class="flex justify-center items-center font-bold w-2/6">087</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">319</span>
+                                            <span class="flex justify-center items-center font-bold w-2/6">207</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 7 -->
+                            <div class="flex flex-row border border-gray-400 bg-blue-100">
+                                <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">7</span>
+                                <div class="flex justify-center items-center p-2 w-5/6">
+                                    <span class="flex justify-center items-center font-bold w-3/6">84</span>
+                                    <span class="flex justify-center items-center font-bold w-3/6">90</span>
+                                    <span class="flex justify-center items-center font-bold w-3/6">63</span>
+                                    <span class="flex justify-center items-center font-bold w-3/6">37</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #table 2 -->
+                        <div class="">
+                            <div class="py-2">
+                                <span class="text-xl text-blue-700 font-bold px-2">Bảng Loto Miền Bắc</span>
+                            </div>
+                            <div class="table-item">
+                                <!-- firs -->
+                                <div class="flex flex-row border border-gray-500">
+                                    <span class="flex justify-center items-center font-bold border-r border-gray-400 p-2 w-1/6">Đầu</span>
+                                    <span class="flex justify-center items-center font-bold border-r border-gray-400 p-2 w-2/6">Đuôi</span>
+                                    <span class="flex justify-center items-center font-bold border-r border-gray-400 p-2 w-2/6">Đầu</span>
+                                    <span class="flex justify-center items-center font-bold p-2 w-1/6">Đuôi</span>
+                                </div>
+                                <!-- 0 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">0</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">3,6,9,7</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">1,4,9</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">0</span>
+                                </div>
+                                <!-- 1 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">1</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">8,7,0,9</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">8,2,7</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">1</span>
+                                </div>
+                                <!-- 2 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-gray-400 border-r p-2 w-1/6">2</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">1</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">8</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">2</span>
+                                </div>
+                                <!-- 3 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-gray-400 border-r p-2 w-1/6">3</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">7</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">0,9,6</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">3</span>
+                                </div>
+                                <!-- 4 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">4</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">0,6</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">8</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">4</span>
+                                </div>
+                                <!-- 5 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-gray-400 border-r p-2 w-1/6">5</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">5,9,6</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">5</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">5</span>
+                                </div>
+                                <!-- 6 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">6</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">8,3,7</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">0,5,4,9</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">6</span>
+                                </div>
+                                <!-- 7 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">7</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">1</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">1,8,0,3,6</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">7</span>
+                                </div>
+                                <!-- 8 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">8</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">1,2,7,4</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">1,6,9</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">8</span>
+                                </div>
+                                <!-- 9 -->
+                                <div class="flex flex-row border border-gray-400">
+                                    <span class="flex justify-center items-center border-r border-gray-400 p-2 w-1/6">9</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">8,3,6,0</span>
+                                    <span class="flex items-center font-bold border-r border-gray-400 p-2 w-2/6">5,0,1</span>
+                                    <span class="flex justify-center items-center p-2 w-1/6">9</span>
+                                </div>
+                            </div>
+
+                            <!-- 10 -->
+                            <div class="border border-gray-400 px-4">
+                                <div class="container">
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Quay thử XSMB</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Quay thử XSMT</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Quay thử XSMN</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Xem kết quả xổ số hôm nay</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary> <span class="text-blue-700">Thống kê loto gan</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Giải Đặc Biệt</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #table 4 -->
+                        <div class="my-4">
+                            <div class=" border border-gray-400 flex flex-col px-2">
+                                <span class="text-xl font-bold my-2">Quai thử Xổ số lấy hên</span>
+                                <span class="text-md py-2 text-justify">Quay thử xổ số hôm nay, quay thử KQXS 3 miền được xoso.com.vn xử lý thông qua hệ thống lập trình tính toán của hệ thống máy tính chất tương đối, do đó chỉ mang tính chất tham khảo trước khi mua Xổ số kiến thiết.</span>
+                                <span class="text-md py-2">Chúng tôi hoàn toàn không chịu trách về việc Quý vị sử dụng thông tin này!</span>
+                                <span class="text-md py-2">Chúc Quý vị may mắn khi tham gia mua Xổ số Kiến thiết</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="table-item flex flex-row m-2 w-6/12">
+                        <!-- column 1 -->
+                        <div class="table-itemed w-2/5">
+                            <!-- 1 -->
+                            <div class="border border-gray-400">
+                                <div class="border-b border-gray-400 bg-blue-100 py-2">
+                                    <span class="text-md font-bold">THỐNG KẾ LOTO</span>
+                                </div>
+                                <div class="container px-4">
+                                    <details class="py-2text-sm">
+                                        <summary><span class="text-blue-700">Loto Gan</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">TK-Đầu Đuôi</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Tần suất Loto</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Theo Tổng</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Từ 00-99</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Giải Đặc Biệt</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="border border-gray-400 my-2">
+                                <div class="border-b border-gray-400 bg-blue-100 py-2">
+                                    <span class="text-md font-bold">XỔ SỐ HÔM QUA</span>
+                                </div>
+                                <div class="container px-4">
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">XSMB</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">TK-Đà Lạt</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Kiên Giang</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Tiền Giang</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Huế</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Khánh Hòa</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">on Tum</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Mega 6/45</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Xs Thần Tài</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Điện toán 123</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="border border-gray-400 my-2">
+                                <div class="border-b border-gray-400 bg-blue-100 py-2">
+                                    <span class="text-md font-bold">TƯỜNG THUẬT TRỰC TIẾP</span>
+                                </div>
+                                <div class="container px-4">
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Miền Bắt</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Miền Trung</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Miền Nam</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="border border-gray-400 my-2">
+                                <div class="border-b border-gray-400 bg-blue-100 py-2">
+                                    <span class="text-md font-bold">THỐNG KẾ CẦU XS</span>
+                                </div>
+                                <div class="container px-4">
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Cầu Bạch Thủ MBMB</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Cầu MB Lật Liên Tục</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Cầu MB Về Cả Cập</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Cầu MB Nhiều Nháy</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Cầu Miền Nam</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Cầu Miền Trung</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="border border-gray-400 my-2">
+                                <div class="border-b border-gray-400 bg-blue-100 py-2">
+                                    <span class="text-md font-bold">THỐNG KẾ XS MEGA</span>
+                                </div>
+                                <div class="container px-4">
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Thống Kế 01-45</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Thống Kế Nhiều Ít</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                    <details class="py-2 text-sm">
+                                        <summary><span class="text-blue-700">Thống Kế Chẵn Lẻ</span></summary>
+                                        <button>Xoso</button>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- column 2 -->
+                        <div class="table-itemed w-3/5 ml-4">
+                            <div class="border border-gray-400">
+                                <div class="border-b border-gray-400 bg-red-700 py-2 px-2">
+                                    <span class="text-md text-white font-bold">KẾT QUẢ THEO NGÀY</span>
+                                </div>
+                                <div class="flex flex-row my-2 px-12">
+                                    <class class="border border-gray-400 py-1 flex flex-row justify-between items-center w-full">
+                                        <div class="mx-2">
+                                            <span>8</span>
+                                        </div>
+                                        <div class="mx-2">
+                                            <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                                        </div>
+                                    </class>
+                                    <class class="border border-gray-400 py-1 flex flex-row justify-between items-center w-full mx-2">
+                                        <div class="mx-2">
+                                            <span></span>
+                                        </div>
+                                        <div class="mx-2">
+                                            <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                                        </div>
+                                    </class>
+                                    <div class="border border-gray-400 bg-gray-200 py-1 px-1 flex justify-center items-center w-full">
+                                        <a href="#">
+                                            <span>Hôm nay</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="w-full">
+                                    <div class="flex w-full bg-blue-100">
+                                        <span class="w-full border text-center text-sm p-1">Hai</span>
+                                        <span class="w-full border text-center text-sm p-1">Ba</span>
+                                        <span class="w-full border text-center text-sm p-1">Tư</span>
+                                        <span class="w-full border text-center text-sm p-1">Năm</span>
+                                        <span class="w-full border text-center text-sm p-1">Sáu</span>
+                                        <span class="w-full border text-center text-sm p-1">Bảy</span>
+                                        <span class="w-full border text-center text-sm p-1">C.N</span>
+                                    </div>
+                                    <div class="flex w-full">
+                                        <span class="w-full border text-center text-sm p-1 bg-blue-100"></span>
+                                        <span class="w-full border text-center text-sm p-1 bg-blue-100"></span>
+                                        <span class="w-full border text-center text-sm p-1">1</span>
+                                        <span class="w-full border text-center text-sm p-1">2</span>
+                                        <span class="w-full border text-center text-sm p-1">3</span>
+                                        <span class="w-full border text-center text-sm p-1">4</span>
+                                        <span class="w-full border text-center text-sm p-1">5</span>
+                                    </div>
+                                    <div class="flex w-full">
+                                        <span class="w-full border text-center text-sm p-1">6</span>
+                                        <span class="w-full border text-center text-sm p-1">7</span>
+                                        <span class="w-full border text-center text-sm p-1">8</span>
+                                        <span class="w-full border text-center text-sm p-1">9</span>
+                                        <span class="w-full border text-center text-sm p-1">10</span>
+                                        <span class="w-full border text-center text-sm p-1">11</span>
+                                        <span class="w-full border text-center text-sm p-1">12</span>
+                                    </div>
+                                    <div class="flex w-full">
+                                        <span class="w-full border text-center text-sm p-1">13</span>
+                                        <span class="w-full border text-center text-sm p-1">14</span>
+                                        <span class="w-full border text-center text-sm p-1">15</span>
+                                        <span class="w-full border text-center text-sm p-1">16</span>
+                                        <span class="w-full border text-center text-sm p-1">17</span>
+                                        <span class="w-full border text-center text-sm p-1">18</span>
+                                        <span class="w-full border text-center text-sm p-1">19</span>
+                                    </div>
+                                    <div class="flex w-full">
+                                        <span class="w-full border text-center text-sm p-1">20</span>
+                                        <span class="w-full border text-center text-sm p-1">21</span>
+                                        <span class="w-full border text-center text-sm p-1">22</span>
+                                        <span class="w-full border text-center text-sm p-1">23</span>
+                                        <span class="w-full border text-center text-sm p-1">24</span>
+                                        <span class="w-full border text-center text-sm p-1">25</span>
+                                        <span class="w-full border text-center text-sm p-1">26</span>
+                                    </div>
+                                    <div class="flex w-full">
+                                        <span class="w-full border text-center text-sm p-1">27</span>
+                                        <span class="w-full border text-center text-sm p-1">28</span>
+                                        <span class="w-full border text-center text-sm p-1">29</span>
+                                        <span class="w-full border text-center text-sm p-1">30</span>
+                                        <span class="w-full border text-center text-sm p-1">31</span>
+                                        <span class="w-full border text-center text-sm p-1 bg-blue-100"></span>
+                                        <span class="w-full border text-center text-sm p-1 bg-blue-100"></span>
+                                    </div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="border border-gray-400 my-4">
+                                    <div class="bg-red-700 py-2">
+                                        <span class="text-white px-2 font-bold">Dò Kết Quả</span>
+                                    </div>
+                                    <div class="">
+                                        <div class="flex flex-row flex-wrap my-2 mx-4">
+                                            <div class="w-2/6">
+                                                <span>Bộ số: </span>
+                                            </div>
+                                            <div class="flex flex-col w-4/6">
+                                                <input class="border border-gray-400"></input>
+                                                <span class="text-xs text-right">Nhập bộ số để dò kết quả</span>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="flex flex-row flex-wrap my-4 mx-4">
+                                            <div class="w-2/6">
+                                                <span>Từ ngày: </span>
+                                            </div>
+                                            <div class="flex flex-col w-4/6">
+                                                <input class="border border-gray-400"></input>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="flex flex-row flex-wrap my-4 mx-4">
+                                            <div class="w-2/6">
+                                                <span>Đến ngày: </span>
+                                            </div>
+                                            <div class="flex flex-col w-4/6">
+                                                <input class="border border-gray-400"></input>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="flex flex-row flex-wrap my-4 mx-4">
+                                            <div class="w-2/6">
+                                                <span>Tỉnh TP: </span>
+                                            </div>
+                                            <div class="flex flex-col w-4/6">
+                                                <input class="border border-gray-400"></input>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="my-4 mx-4 text-right ">
+                                            <a href="#">
+                                                <span class="bg-gray-200 text-sm border border-gray-400 py-2 px-2">Dò kết quả</span>
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="flex flex-col my-4 mx-4">
+                                            <span class=" text-xs">Bạn có thể thống kê một hoặc nhiều số:</span>
+                                            <span class=" text-xs">Ví dụ: 36 hoặc 68, 86</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-50 border-t shadow">
+        <div class="max-w-6xl m-auto">
+            <div class="grid grid-cols-12 gaap-5">
+                <div class="col-span-8">
+                    <h1 class="text-md font-bold py-2">Copyright © 2007 - 2022 Xoso.com.vn, All Rights Reserved</h1>
+                    <p class="text-sm py-3">Chủ sở hữu: Công ty CP Ứng dụng Công nghệ Truyền thông CTC Địa chỉ: Tầng 2, Tòa nhà IC, số 82 Duy Tân, Cầu Giấy, Hà Nội Hỗ trợ: 024.6281.2997 - Email: xoso@ctc.com.vn Nội dung kết quả xổ số được hợp tác bởi Công ty TNHH Một thành viên Xổ số kiến thiết Thủ đô. Điều khoản thỏa thuận và quy ước sử dụng dịch vụ</p>
+                </div>
+                <div class="col-span-4 m-auto">
+                    <h1 class="text-center pb-10 text-lg font-bold">Download App</h1>
+                    <div class="flex items-center">
+                        <a href="#" class="mx-2"><img src="./assets/img/pic link/google_play.png" alt=""></a>
+                        <a href="#" class="mx-2"><img src="./assets/img/pic link/APPLE-go.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- script link -->
+    <script src="./assets/script/script.js"></script>
+
+
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>

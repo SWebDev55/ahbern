@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    header .open-menu,
+    header .date,
+    .menu .close-menu{
+        display: block;
+    }
+    header{
+        padding: 10px;
+    }
+    header .open-menu{
+        font-size: 22px;
+    }
+    nav .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 200;
+        background-color: #fff;
+        width: 0;
+        overflow-x: hidden;
+        transition: 0.3s;
+    }
+    nav .menu ul{
+        margin: 0;
+        padding: 0;
+    }
+    nav .menu ul li{
+        display: block;
+    }
+    nav .menu ul li a{
+        font-size: 15px;
+        font-weight: 500;
+        color: #000000;
+        border-bottom: 1px solid #00000015;
+    }
+    .menu .logo-mobile{
+        display: block;
+    }
+    .menu .logo-mobile img{
+        width: 70%;
+        margin: auto;
+    }
+
+    .main-blog{
+        width: 100%;
+        padding: 0px !important;
+    }
+    .main-blog .box{
+        display: block;
+    }
+    .main-blog .box .left-col h1{
+        font-size: 18px;
+    }
+    .main-blog .box .left-col .link-text a{
+        font-size: 10px;
+    }
+    .main-blog .box .left-col .tbl-1 p{
+        font-size: 14px;
+    }
+    .text-1 a{
+        font-size: 13px;
+    }
+    .main-blog .box .left-col .tbl-2 .row-10,
+    .main-blog .box .left-col .tbl-2 .row-11,
+    .main-blog .box .left-col .tbl-2 .row-12,
+    .main-blog .box .left-col .tbl-2 .row-13,
+    .main-blog .box .left-col .tbl-2 .row-14,
+    .main-blog .box .left-col .tbl-2 .row-15,
+    .main-blog .box .left-col .tbl-2 .row-16,
+    .main-blog .box .left-col .tbl-2 .row-17,
+    .main-blog .box .left-col .tbl-2 .row-18,
+    .main-blog .box .left-col .tbl-2 .row-19,
+    .main-blog .box .left-col .tbl-2 .row-20{
+        font-size: 12px;
+    }
+    
+    .tbl-3{
+        font-size: 18px;
+    }
+    .tbl-4{
+        font-size: 12px;
+    }
+    .text-link-tbl-4,
+    .text-link-tbl-6,
+    .text-link-tbl-7{
+        font-size: 12px;
+    }
+    .tbl-5,
+    .tbl-6{
+        font-size: 11px;
+    }
+    .tbl-7 p{
+        font-size: 15px;
+    }
+    .right-col .box{
+        display: block;
+    }
+
+    footer .grid{
+        display: block;
+    }
+    footer .grid .col-span-4{
+        text-align: center;
+        margin: auto;
+    }
+
+
+    .wraper .wrap .table .table-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .wraper .wrap .table .table-content .table-item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+    .wraper .wrap .table .table-content .table-item .table-itemed{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    header .open-menu,
+    header .date,
+    .menu .close-menu{
+        display: block;
+    }
+    header{
+        padding: 10px;
+    }
+    header .open-menu{
+        font-size: 22px;
+    }
+    nav .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 200;
+        background-color: #fff;
+        width: 0;
+        overflow-x: hidden;
+        transition: 0.3s;
+    }
+    nav .menu ul{
+        margin: 0;
+        padding: 0;
+    }
+    nav .menu ul li{
+        display: block;
+    }
+    nav .menu ul li a{
+        font-size: 15px;
+        font-weight: 500;
+        color: #000000;
+        border-bottom: 1px solid #00000015;
+    }
+    .menu .logo-mobile{
+        display: block;
+    }
+    .menu .logo-mobile img{
+        width: 70%;
+        margin: auto;
+    }
+
+    .main-blog{
+        width: 100%;
+        padding: 0px !important;
+    }
+    .main-blog .box{
+        display: block;
+    }
+    .main-blog .box .left-col h1{
+        font-size: 18px;
+    }
+    .main-blog .box .left-col .link-text a{
+        font-size: 10px;
+    }
+    .main-blog .box .left-col .tbl-1 p{
+        font-size: 14px;
+    }
+    .text-1 a{
+        font-size: 13px;
+    }
+    .main-blog .box .left-col .tbl-2 .row-10,
+    .main-blog .box .left-col .tbl-2 .row-11,
+    .main-blog .box .left-col .tbl-2 .row-12,
+    .main-blog .box .left-col .tbl-2 .row-13,
+    .main-blog .box .left-col .tbl-2 .row-14,
+    .main-blog .box .left-col .tbl-2 .row-15,
+    .main-blog .box .left-col .tbl-2 .row-16,
+    .main-blog .box .left-col .tbl-2 .row-17,
+    .main-blog .box .left-col .tbl-2 .row-18,
+    .main-blog .box .left-col .tbl-2 .row-19,
+    .main-blog .box .left-col .tbl-2 .row-20{
+        font-size: 12px;
+    }
+    
+    .tbl-3{
+        font-size: 18px;
+    }
+    .tbl-4{
+        font-size: 12px;
+    }
+    .text-link-tbl-4,
+    .text-link-tbl-6,
+    .text-link-tbl-7{
+        font-size: 12px;
+    }
+    .tbl-5,
+    .tbl-6{
+        font-size: 11px;
+    }
+    .tbl-7 p{
+        font-size: 15px;
+    }
+    .right-col .box{
+        display: block;
+    }
+
+    footer .grid{
+        display: block;
+    }
+    footer .grid .col-span-4{
+        text-align: center;
+        margin: auto;
+    }
+
+    .wraper .wrap .table .table-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .wraper .wrap .table .table-content .table-item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+    .wraper .wrap .table .table-content .table-item .table-itemed{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wraper .wrap .table{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
